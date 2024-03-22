@@ -1,0 +1,11 @@
+Model Information:
+* title:	Griffith Observatory
+* source:	https://sketchfab.com/3d-models/griffith-observatory-206b9e053342451caed70dc000c81bd0
+* author:	Mark Burginger architect (https://sketchfab.com/toy_meister)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Griffith Observatory" (https://sketchfab.com/3d-models/griffith-observatory-206b9e053342451caed70dc000c81bd0) by Mark Burginger architect (https://sketchfab.com/toy_meister) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

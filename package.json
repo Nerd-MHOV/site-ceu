@@ -1,0 +1,50 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@fullcalendar/core": "^6.1.11",
+    "@fullcalendar/daygrid": "^6.1.11",
+    "@fullcalendar/react": "^6.1.11",
+    "@mui/material": "^5.15.14",
+    "@mui/system": "^5.15.14",
+    "@react-three/cannon": "^6.6.0",
+    "@react-three/drei": "^9.83.0",
+    "@react-three/fiber": "^8.14.6",
+    "@types/three": "^0.162.0",
+    "framer-motion": "^10.16.4",
+    "gsap": "^3.12.5",
+    "maath": "^0.10.7",
+    "next": "14.1.0",
+    "nipplejs": "^0.10.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-slugify": "^3.0.3",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "sharp": "^0.33.2",
+    "three": "^0.157.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
