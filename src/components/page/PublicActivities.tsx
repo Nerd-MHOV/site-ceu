@@ -37,11 +37,11 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => (
         }
     >
         <div>
-            <h3 className="text-white text-white[24px] font-bold">
+            <h3 className="text-white text-[28px] font-bold">
                 {experience.title}
             </h3>
             <p
-                className="text-secondary text-[16px] font-semibold" style={{ margin: 0 }}
+                className="text-secondary !text-[18px] font-semibold" style={{ margin: 0 }}
             >{experience.company_name}</p>
         </div>
 
@@ -49,7 +49,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => (
             {experience.points.map((point, index) => (
                 <li
                     key={`experience-point-${index}`}
-                    className="text-white-100 text-[14px] pl-1 tracking-wider list-none"
+                    className="text-white-100 text-[17px] pl-1 tracking-wider list-none"
                 >
                     {point}
                 </li>
@@ -61,8 +61,8 @@ const PublicActivities = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={styles.sectionSubText}>Cronograma</p>
-                <h2 className={styles.sectionHeadText}>Atividades para o público</h2>
+                <h2 className={styles.newTitle}>Atividades para o público</h2>
+                <p className={styles.newSubTitle}>Cronograma</p>
             </motion.div>
             
             <div className="mt-20 flex flex-col">

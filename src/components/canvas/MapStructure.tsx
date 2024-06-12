@@ -1,27 +1,27 @@
 'use client'
 import {RefObject, Suspense, useEffect, useRef} from 'react'
 import {Canvas} from '@react-three/fiber'
-import {OrbitControls, PerspectiveCamera, useGLTF} from "@react-three/drei";
+import {Environment, OrbitControls, PerspectiveCamera, useGLTF} from "@react-three/drei";
 import gsap from 'gsap'
 import CanvasLoader from '../ui/Loader'
-import {Group, Object3DEventMap, Vector3} from "three";
+import {ACESFilmicToneMapping, AmbientLight, Group, LinearToneMapping, Object3DEventMap, Vector3} from "three";
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib'
 
 const positionMapStructure = [
     {
         id: 0,
-        position: new Vector3(10, 2, 35),
-        rotation: new Vector3(0.05, 0, 0),
+        position: new Vector3(20, -2, 30),
+        rotation: new Vector3(0, 1, 0),
     },
     {
         id: 1,
-        position: new Vector3(0, -2, 34),
-        rotation: new Vector3(0.09, 0, 0),
+        position: new Vector3(30, 2, 50),
+        rotation: new Vector3(0, 2, 0),
     },
     {
         id: 2,
-        position: new Vector3(-29, 7, -29),
-        rotation: new Vector3(0.2, -2, 0),
+        position: new Vector3(100, 2, 10),
+        rotation: new Vector3(0, 2.5, 0), 
     },
 ];
 
@@ -36,12 +36,12 @@ interface MapStructureProps {
     orbitRef: RefObject<OrbitControlsImpl>,
 }
 const MapStructure = ({idStructure, camRef, orbitRef}: MapStructureProps) => {
-    const structure = useGLTF('/structureMapMesh/scene.gltf')
+    const structure = useGLTF('/mapceu/CEU.glb')
 
     const map = getCurrentStructure(idStructure)
     const groupRef = useRef<Group<Object3DEventMap>>(null);
-
-
+    
+    
     useEffect(() => {
         if (map?.position && camRef?.current) {
             orbitRef.current?.reset();
@@ -98,9 +98,14 @@ const MapStructureCanvas = ({idStructure = null}: MapStructureCanvasProps) => {
         <Canvas
             shadows
             frameloop='demand'
-            gl={{preserveDrawingBuffer: true}}
+            gl={{preserveDrawingBuffer: true, toneMappingExposure: 1,
+                 toneMapping: LinearToneMapping, 
+                }}
         >
             <Suspense fallback={<CanvasLoader/>}>
+                {/* <Environment  preset='sunset' /> */}
+                <ambientLight intensity={1.5} />
+                <directionalLight intensity={1.5} />
                 <OrbitControls ref={orbitRef}/>
                 <group ref={cameraRef} rotation={[0.3, 0, 0]} position={[0, 0, 10]}>
                     <PerspectiveCamera position={[0, 0, 5]} fov={30}/>

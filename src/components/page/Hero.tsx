@@ -10,12 +10,13 @@ const Hero = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const images = [
-        // "bg-cupula",
-        // "bg-ceu-brotas",
         "bg-cupula-noite",
-        // "bg-obs-sara",
+        "bg-telescopio-dark",
+        "bg-telescopio-dark-2",
+        "bg-telescopio-light",
         // "bg-stone-range-2",
-        // "bg-telescopio-2"
+        // "bg-telescopio-1",
+        // "bg-panoramic",
     ];
 
     const changeImage = () => {
@@ -23,7 +24,7 @@ const Hero = () => {
     };
 
     useEffect(() => {
-        const intervalId = setInterval(changeImage, 5000);
+        const intervalId = setInterval(changeImage, 8000);
         return () => clearInterval(intervalId);
     }, []);
 
@@ -43,8 +44,8 @@ const Hero = () => {
                     transition={{duration: 0.4, delay: 0.6}}
                     className="flex flex-col justfy-center items-center mt-5"
                 >
-                    <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-                    <div className="w-1 sm:h-80 h-40 violet-gradient" />
+                    <div className="w-5 h-5 rounded-full bg-[#f5f3ff]" />
+                    <div className="w-1 sm:h-80 h-40 blue-gradient" />
                 </motion.div>
 
                 <div>
@@ -56,7 +57,7 @@ const Hero = () => {
                             x: 0
                         }}
                         transition={{duration: 0.5, ease: "easeOut"}}
-                        className='bg-gradient-to-r from-[#05081640]  to-transparent px-3 rounded-2xl'
+                        className='bg-gradient-to-r from-[#050816de]  to-transparent px-3 rounded-2xl'
                     >
                         <Image src={logoH} alt='logo' className='sm:w-1/2 w-full'/>
 
@@ -73,10 +74,10 @@ const Hero = () => {
                         >
 
                             <p
-                                className={`${styles.heroSubText} mt-2 text-white-100`}
+                                className={`${styles.heroSubText} mt-2 text-white-100 p-2`}
                             >
-                                Um dos mais completos centros de ciência
-                                <br className="sm:block hidden"/>
+                                Um dos mais completos centros de ciência {" "}
+                                {/* <br className="sm:block hidden"/> */}
                                 da América Latina
                             </p>
                         </motion.div>

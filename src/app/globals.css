@@ -1,16 +1,62 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 100;
+    src: url('/fonts/MarkPro-Thin.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 200;
+    src: url('/fonts/MarkPro-ExtraLight.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 300;
+    src: url('/fonts/MarkPro-light.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 400;
+    src: url('/fonts/MarkPro.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 500;
+    src: url('/fonts/MarkPro-Book.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 600;
+    src: url('/fonts/MarkPro-Medium.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 700;
+    src: url('/fonts/MarkPro-Bold.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 800;
+    src: url('/fonts/MarkPro-Heavy.otf');
+  }
+  @font-face { 
+    font-family: 'mark pro';
+    font-weight: 900;
+    src: url('/fonts/MarkPro-Black.otf');
+  }
+  
+}
 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "mark pro", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -63,6 +109,16 @@
   background: -webkit-linear-gradient(
           -90deg,
           #804dee 0%,
+          rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.blue-gradient {
+  background: #f5f3ff;
+  background: linear-gradient(-90deg, #f5f3ff 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+          -90deg,
+          #f5f3ff 0%,
           rgba(60, 51, 80, 0) 100%
   );
 }
@@ -225,4 +281,10 @@
     -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
     -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+
+/* MUI ICONS */
+.MuiChip-label {
+  font-size: 17px;
 }

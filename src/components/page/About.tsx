@@ -40,23 +40,24 @@ const About = () => {
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={styles.sectionSubText}>
+                {/* <p className={styles.sectionSubText}>
                     Introdução
-                </p>
+                </p> */}
                 <h2
-                    className={styles.sectionHeadText}
-                >Quem somos.</h2>
+                    className={'text-white uppercase font-medium sm:text-[50px] xs:text-[40px] text-[30px]'}
+                     // className={styles.sectionHeadText}
+                >Quem somos</h2>
             </motion.div>
 
             <motion.p
                 variants={fadeIn("", "", 0.1, 1)}
-                className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+                className="mt-4 text-secondary text-justify indent-4 text-[20px] max-w-3xl leading-[30px]"
             >
                 O Centro de Estudos do Universo atua há mais de 20 anos em diversos segmentos educacionais,
                 proporcionando atividades que complementam o currículo escolar de forma pragmática, com uma linguagem
                 popular e em um ambiente descontraído.
 
-                Ao mesmo tempo, são ofertadas sessões de atendimento ao público, buscando divulgar a astronomia por meio
+                Ao mesmo tempo, são oferecidas sessões de atendimento ao público, buscando divulgar a astronomia por meio
                 da vivência de observar o Universo lá fora usando modernos telescópios e viajar por ele em nosso
                 planetário digital.
             </motion.p>

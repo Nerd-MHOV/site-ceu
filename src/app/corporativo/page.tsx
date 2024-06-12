@@ -4,20 +4,14 @@ import { fadeIn } from "@/utils/motion"
 import { SectionWrapperComponent } from "@/hoc"
 import { Layout } from '@/components/ui'
 import { BoxText } from '@/components/ui/boxText'
+import TitlePage from '@/components/ui/TitlePage'
 
 
 const Corporate = () => {
     return <Layout>
         <div className="mt-[120px]">
-            <motion.div>
-                <h1
-                    className={`text-logo-yel font-black md:text-[70px] mb-20
-                 sm:text-[60px] xs:text-[45px] text-[35px] w-full text-center`}
-                >
-                    Eventos Corporativos
-                </h1>
-            </motion.div>
-            <div className={`bg-coporate-img1 w-full h-[200px] bg-cover bg-no-repeat sm:bg-fixed bg-center`}
+            <TitlePage title='Eventos Corporativos' />
+            <div className={`bg-coporate-img1 w-full mt-16 h-[200px] bg-cover bg-no-repeat sm:bg-fixed bg-center`}
             ></div>
             <hr className="max-w-[300px] mx-auto mt-5" />
             <motion.p
@@ -37,8 +31,8 @@ const Corporate = () => {
             <SectionWrapperComponent idName='aquario-empresa'>
                 <BoxText.Root>
                     <BoxText.TitleBox>
-                        <BoxText.Subtitle text="Ideal para reuniões e dinâmicas de equipe" />
                         <BoxText.Title text="Aquário (Sala Marte)" />
+                        <BoxText.SubtitleSimple text="Ideal para reuniões e dinâmicas de equipe" />
                     </BoxText.TitleBox>
                     <BoxText.Paragraph>
                         A Sala Marte, salão do C.E.U. (Centro de Estudos do Universo) conhecido como “Aquário”,
@@ -58,13 +52,13 @@ const Corporate = () => {
                     </BoxText.Button>
                 </BoxText.Root>
             </SectionWrapperComponent>
-            <div className={`bg-coporate-img2 w-full h-[200px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
+            <div className={`bg-coporate-img2 w-full h-[400px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
             ></div>
             <SectionWrapperComponent idName='auditorio-empresa'>
                 <BoxText.Root>
                     <BoxText.TitleBox>
-                        <BoxText.Subtitle text="Ideal para palestras." />
                         <BoxText.Title text="Auditório" />
+                        <BoxText.SubtitleSimple text="Ideal para palestras" />
                     </BoxText.TitleBox>
                     <BoxText.Paragraph>
                         Nosso Auditório Multimídia oferece a possibilidade de realizar palestras em um ambiente propício,
@@ -81,7 +75,7 @@ const Corporate = () => {
                     </BoxText.Button>
                 </BoxText.Root>
             </SectionWrapperComponent>
-            <div className={`bg-coporate-img3 w-full h-[200px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
+            <div className={`bg-coporate-img3 w-full h-[400px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
             ></div>
         </div>
     </Layout>

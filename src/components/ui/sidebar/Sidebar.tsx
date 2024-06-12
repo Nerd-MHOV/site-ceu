@@ -24,6 +24,8 @@ const variants  = {
         }
     },
 }
+
+// background: linear-gradient(193deg, rgba(240, 240, 240, 1) 0%, rgb(206 228 235 / 49%) 100%);
 const Sidebar = () => {
     const [ open, setOpen ] = useState(true)
 
@@ -34,7 +36,7 @@ const Sidebar = () => {
      }, [])
 
     return <motion.div animate={open ? "open" : "closed"} className='flex flex-col items-center justify-center bg-white color-black'>
-        <motion.div variants={variants} className=' fixed top-0 right-0 w-[400px] bottom-0 bg-violet-50 '>
+        <motion.div variants={variants} className=' fixed top-0 right-0 w-[400px] bottom-0 bg-gradient-to-bl from-violet-50 to-violet-50/70'>
             <LinksSidebar />
         </motion.div>
         <ButtonSidebar setOpen={setOpen}/>

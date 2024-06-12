@@ -15,8 +15,8 @@ const ProjectCard: React.ComponentType<ProjectCardProps> = ({
     const searchParams = useSearchParams();
     return (
         <motion.div
+            key={index}
             whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
-        // variants={animated ? fadeIn('up', 'spring', index * 0.5, 0.75 ) : () => {}}
         >
             <motion.div
 
@@ -41,13 +41,13 @@ const ProjectCard: React.ComponentType<ProjectCardProps> = ({
 
 
 
-                <motion.div className="mt-4 flex flex-wrap gap-2">
+                {/* <motion.div className="mt-4 flex flex-wrap gap-2">
                     {tags.map(tag => (
                         <motion.p key={tag.title} className={`text-[12px] ${tag.color}`}>
                             #{tag.title}
                         </motion.p>
                     ))}
-                </motion.div>
+                </motion.div> */}
                 <Link href={`/atividades/${slugify(title)}?${searchParams.toString()}`} 
                 className='bg-logo-yel p-1 flex mt-3 max-w-[120px] text-center items-center pointer-events-auto cursor-pointer  '>
                     <p className='text-center font-bold m-auto text-black-200'>Saiba mais!</p>

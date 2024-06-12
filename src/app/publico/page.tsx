@@ -6,20 +6,17 @@ import { BoxText } from '@/components/ui/boxText'
 import { Layout } from "@/components/ui"
 import Calendar from '@/components/page/Calendar'
 import PublicActivities from '@/components/page/PublicActivities'
+import TitlePage from "@/components/ui/TitlePage"
+import { useEffect, useState } from "react"
+import getEventsCalendar from "@/helpers/getEventsCalendar"
 
 
 const PublicService = () => {
+    
     return (
         <Layout>
             <div className="mt-[120px]">
-                <motion.div>
-                    <h1
-                        className={`text-logo-yel font-black md:text-[70px] mb-20
-                 sm:text-[60px] xs:text-[45px] text-[35px] w-full text-center`}
-                    >
-                        Atendimento ao Público
-                    </h1>
-                </motion.div>
+                <TitlePage title='Atendimento ao Público' />
 
                 <Calendar />
 
@@ -71,7 +68,7 @@ const PublicService = () => {
 
                 <motion.div
                     variants={slideIn('left', 'tween', 0.2, 1)}
-                    className='bg-black-200 p-10 rounded-3xl md:mx-32 my-36 w-auto'
+                    className='bg-black-200 p-10 rounded-3xl md:mx-32 mx-4 my-36 w-auto'
                 >
                     <p className="text-white font-black text-[48px]">"</p>
 

@@ -56,10 +56,10 @@ const Footer = () => {
                     >
                         <p
                             className='text-white tracking-wider text-[18px]'
-                        >Rua Emílio Dalla Déa Filho,</p>
+                        >Rua Emílio Dalla Déa Filho, Portão 4</p>
                         <p className='text-white tracking-wider text-[18px]'><span
-                            className='blue-text-gradient'>Bairro:</span> Campos Eliseos,</p>
-                        <p className='text-white tracking-wider text-[18px]'>17380-000,</p>
+                            className='blue-text-gradient'>Bairro:</span> Campos Eliseos</p>
+                        <p className='text-white tracking-wider text-[18px]'>17385-336</p>
                         <p className='text-white tracking-wider text-[18px]'><span
                             className='blue-text-gradient'>Brotas-SP</span></p>
                     </FooterCard>
@@ -70,7 +70,8 @@ const Footer = () => {
                     >
                         <span className='blue-text-gradient'>Ligue:</span>
                         <p className='text-white tracking-wider text-[18px]'>(14) 3653 4466</p>
-                        <p className='text-white tracking-wider text-[18px] mb-3'>(14) 3653 9999</p>
+                        <p className='text-white tracking-wider text-[18px]'>(14) 3653 9999</p>
+                        <p className='text-white tracking-wider text-[18px] mb-3'>(11) 3035-1900</p>
                         <span className='blue-text-gradient'>Ou Whatsapp:</span>
                         <a href="https://wa.me/5511999043551" target='_blank'>
                             <p className='text-white tracking-wider text-[18px] cursor-pointer'>(11) 99904 3551</p>

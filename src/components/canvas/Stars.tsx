@@ -6,9 +6,9 @@ import * as random from 'maath/random/dist/maath-random.esm'
 
 
 const Stars = (props: any) => {
-    const { size } = props;
+    const { size, amount } = props;
     const ref = useRef();
-    const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    const sphere = random.inSphere(new Float32Array(amount), { radius: 1.2 })
 
     useFrame((state, delta) => {
         // @ts-ignore
@@ -33,16 +33,17 @@ const Stars = (props: any) => {
 
 interface StarCanvasProps {
     size?: string,
+    amount?: number,
     className?: string,
 }
 
-const StarsCanvas = ({ size = "0.002", className}: StarCanvasProps) => {
+const StarsCanvas = ({ size = "0.002", amount = 5000, className}: StarCanvasProps) => {
 
     return (
         <div className={`w-full h-full absolute inset-0 z-[-1] ${className}`}>
             <Canvas camera={{ position: [ 0, 0, 1 ] }}>
                 <Suspense fallback={null} >
-                    <Stars size={size}/>
+                    <Stars size={size} amount={amount} />
                 </Suspense>
 
                 <Preload all />

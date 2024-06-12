@@ -27,6 +27,8 @@ interface SliderProjectProps {
 }
 
 const SliderProject: React.ComponentType<SliderProjectProps> = ({ title, subTitle, description, items, animated = true}) => {
+    if ( items.length === 0 ) return null
+
     const searchParams = useSearchParams();
     const content = useRef<HTMLDivElement>(null);
     const [width, setWidth] = useState(0);
@@ -37,18 +39,16 @@ const SliderProject: React.ComponentType<SliderProjectProps> = ({ title, subTitl
             setWidth(content.current.scrollWidth - content.current.offsetWidth)
     }, [searchParams])
 
+
     return (
         <div className="mt-20">
             <motion.div
-                // variants={animated ? textVariant() : () => {}}
             >
-
                 <p className={styles.sectionSubText}>{subTitle}</p>
-                <h2 className={styles.sectionHeadText}>{title}.</h2>
+                <h2 className={styles.sectionHeadText}>{title}</h2>
             </motion.div>
             <div className='w-full flex'>
                 <motion.p
-                    // variants={ animated ? fadeIn('', '', 0.1, 1) : () => {} }
                     className='mt-3 text-secondary text-[17px] max-w-3xl  leading-[30px] mb-3'
                 >
                     {description}
@@ -71,13 +71,11 @@ const SliderProject: React.ComponentType<SliderProjectProps> = ({ title, subTitl
 
                     {items.length > 0 ?
                         items.map((item, index) => (
-                        <>
                             <ProjectCard
-                                    key={index}
-                                         index={index}
-                                    {...item}
-                                />
-                        </>
+                                key={index}
+                                index={index}
+                                {...item}
+                            />
                     ))
                     : <NotFoundActivity type={title} />}
                 </motion.div>

@@ -3,6 +3,7 @@ import BoxTextButton from "./BoxTextButtonContent";
 import BoxTextIconRight from "./BoxTextIconRight";
 import BoxTextParagraph from "./BoxTextParagraph";
 import BoxTextSubtitle from "./BoxTextSubtitle";
+import BoxTextSubtitleSimple from "./BoxTextSubtitleSimple";
 import BoxTextTitleContent from "./BoxTextTitleContent";
 import BoxTextTitle from "./BoxTextTitle";
 
@@ -13,5 +14,6 @@ export const BoxText = {
     Title: BoxTextTitle,
     Paragraph: BoxTextParagraph,
     Subtitle: BoxTextSubtitle,
+    SubtitleSimple: BoxTextSubtitleSimple,
     TitleBox: BoxTextTitleContent,
 }
