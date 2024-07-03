@@ -7,8 +7,8 @@ import { Layout } from "@/components/ui"
 import Calendar from '@/components/page/Calendar'
 import PublicActivities from '@/components/page/PublicActivities'
 import TitlePage from "@/components/ui/TitlePage"
-import { useEffect, useState } from "react"
-import getEventsCalendar from "@/helpers/getEventsCalendar"
+import Image from "next/image"
+import PhotoSlider from "@/components/ui/PhotoSlider"
 
 
 const PublicService = () => {
@@ -43,6 +43,22 @@ const PublicService = () => {
                             Você pode agendar sua visita, pelo nosso WhatsApp, pelo instagram ou ainda Ligando no nosso Telefone.
                         </BoxText.Paragraph>
                         <div className="mt-10">
+                            <PhotoSlider images={[
+                                "/images/atendimentoPublico/obs-sara.jpg",
+                                "/images/atendimentoPublico/publico-1.jpg",
+                                "/images/atendimentoPublico/publico-2.jpg",
+                                "/images/atendimentoPublico/publico-3.jpg",
+                                "/images/atendimentoPublico/publico-4.jpg",
+                                "/images/atendimentoPublico/publico-5.jpg",
+                                "/images/atendimentoPublico/publico-6.jpg",
+                                "/images/atendimentoPublico/publico-7.jpg",
+                                "/images/atendimentoPublico/publico-8.jpg",
+                                "/images/atendimentoPublico/publico-9.jpg",
+                                "/images/atendimentoPublico/publico-10.jpg",
+                                "/images/atendimentoPublico/publico-11.jpg",
+                            ]} />
+                        </div>
+                        <div className="mt-10">
                         <BoxText.TitleBox>
                             <BoxText.Title text="Ingressos" />
                         </BoxText.TitleBox>
@@ -70,7 +86,7 @@ const PublicService = () => {
                     variants={slideIn('left', 'tween', 0.2, 1)}
                     className='bg-black-200 p-10 rounded-3xl md:mx-32 mx-4 my-36 w-auto'
                 >
-                    <p className="text-white font-black text-[48px]">"</p>
+                    <p className="text-white font-black text-[48px]">&quot;</p>
 
                     <div className="mt-1">
                         <p
@@ -84,9 +100,11 @@ const PublicService = () => {
                                 <p className='mt-1 text-secondary text-[12px]'>Cientista planetário e astrônomo</p>
                             </div>
 
-                            <img
+                            <Image
                                 src={'https://cdn.britannica.com/36/194736-050-CA5BE18B/Carl-Sagan-science-writer-American.jpg'}
                                 alt={`by-Carl-Sagan`}
+                                width={32}
+                                height={32}
                                 className='w-32 h-32 rounded-full object-cover'
                             />
                         </div>

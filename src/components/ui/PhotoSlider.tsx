@@ -14,13 +14,12 @@ const ShowFullImage = (props: ShowFullImageProps) => {
     return <Dialog onClose={onClose} open={open}>
         <img 
             src={image}
-            className='w-full h-full object-cover rouded-2xl'
+            className='w-full h-full max-h-screen object-cover rouded-2xl'
         />
     </Dialog>
 }
 
 const PhotoSlider = ({ images }: { images: string[] }) => {
-    if (images.length === 0) return null
     const [open, setOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -39,6 +38,7 @@ const PhotoSlider = ({ images }: { images: string[] }) => {
         if (content.current)
             setWidth(content.current.scrollWidth - content.current.offsetWidth)
     }, [])
+    if (images.length === 0) return null
 
     return (
         <motion.div
@@ -52,7 +52,7 @@ const PhotoSlider = ({ images }: { images: string[] }) => {
                 open={open}
             />
             <motion.div
-                className=" mb-5 flex gap-5 max-h-[650px] "
+                className=" mb-5 flex gap-5 max-h-[800px] "
                 drag='x'
                 dragConstraints={{ right: 0, left: -width }}
                 initial={{ x: 0 }}

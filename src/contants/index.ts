@@ -57,27 +57,81 @@ export const navLinks = [
 const structure = [
     {
         id: 0,
-        name: 'Anfiteatro',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos hic iusto
-                nesciunt odio, odit repellendus sapiente veniam voluptate. recusandae velit voluptas.`,
-        staticImage: '/a-static.png',
-        dynamicImage: '/auditorio-teste.png',
+        name: 'Auditório',
+        description: `Com capacidade para 130 pessoas, o auditório é onde ocorrem as apresentações multimídias e palestras em locações empresarias. Sua estrutura adaptável também permite oferecer maior comodidade para as atividades, de acordo com a demanda de cada instituição.`,
+        staticImage: '/images/structure/auditorio.jpg',
+        tourId: 5,
+        
     },
     {
         id: 1,
-        name: 'Caverna',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos hic iusto
-                nesciunt odio, odit repellendus sapiente veniam voluptate. recusandae velit voluptas.`,
-        staticImage: '/a-static.png',
-        dynamicImage: '/auditorio-teste.png',
+        name: 'Planetário',
+        description: `Sala com capacidade de 65 pessoas, com teto em formato de domo, onde são projetadas imagens através de um projetor em formato 180ºx360º. Seu formato digital permite a exibição de filmes imersivos de várias aréas do conhecimento humano.`,
+        staticImage: '/images/structure/planetario.jpg',
+        tourId: 13,
     },
     {
         id: 2,
-        name: 'Planetario',
-        description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda blanditiis dignissimos hic iusto
-                nesciunt odio, odit repellendus sapiente veniam voluptate. recusandae velit voluptas.`,
-        staticImage: '/a-static.png',
-        dynamicImage: '/auditorio-teste.png',
+        name: 'Aquário',
+        description: `Salão onde ocorrem algumas das oficinas interativas para escolas. Aqui ocorrem também reuniões corporativas, com todo o aparato multimídia disponível.`,
+        staticImage: '/images/structure/aquario.jpg',
+        tourId: 4,
+    },
+    {
+        id: 3,
+        name: 'Geo-show',
+        description: `Paredão colorido de 20 metros de comprimento que representa o perfil geológico do Estado de São Paulo. Neste local contamos a história do nosso planeta e dos períodos geológicos da Terra.`,
+        staticImage: '/images/structure/geo-show.jpeg',
+        tourId: 11,
+    },
+    {
+        id: 4,
+        name: 'Caverna',
+        description: `Espaço subterrâneo com cerca de 200 m² representando um caverna cenográfica. Neste local acontecem as oficinas de geologia de indentificação de rochas e fósseis e também festas de formatura promovidas pela Peraltas ALL PARTY.`,
+        staticImage: '/images/structure/caverna.jpg',
+        tourId: 7,
+    },
+    {
+        id: 5,
+        name: 'Base de Lançamentos',
+        description: `Nesta base com casa-mata e torre de lançamento, realizamos a oficina "PHOBOS - O Foguete" que lança minifoguetes que podem atingir 200 metros no seu apogeu. Comporta foguetes de até 2 metros de altura, por esse motivo é utilizada por diversas intituições para lançamentos.`,
+        staticImage: '/images/structure/base-de-lancamento.jpg',
+        tourId: 6,
+    },
+    {
+        id: 6,
+        name: 'Observatório',
+        description: `Cúpula de observação equipada com um dos mais modernos telescópios eletrônicos disponíveis ao público no Brasil. Neste telescópio é possivel a observação de planetas, estrelas, agromerados, nebulosas e galáxias.`,
+        staticImage: '/images/structure/observatorio.jpg',
+        tourId: 8,
+    },
+    {
+        id: 7,
+        name: 'Stonehenge',
+        description: `Considerado um dos mais antigos observatórios astronômicos, o monumento que fica em Salisbury, Inglaterra, foi construido há 5 mil anos e era multifuncional. A nossa réplica é cerca de 3x menor que a original e auxilia na explicação sobre a evolução dos meios de observação do céu com o passar do tempo.`,
+        staticImage: '/images/structure/stonehenge.jpeg',
+        tourId: 15,
+    },
+    {
+        id: 8,
+        name: 'Relógio de Sol',
+        description: `Relógio de sol analemático construido no jardim, onde o ponteiro é a própria pessoa. Ele é utilizado para os estudantes compararem com o relógio de sol construido na oficina "O Céu na régua e compasso"`,
+        staticImage: '/images/structure/relogio-de-sol.jpeg',
+        tourId: 14,
+    },
+    {
+        id: 9,
+        name: 'Estação Meteorológica',
+        description: `Estação automática para coleta de dados meteorológicos, que podem ser usadas em oficinas interativas. São coletados dados de temperatura, precipitação, humidade do ar, velocidade do vento e radiação solar.`,
+        staticImage: '/images/structure/estacao-meteorologica.jpeg',
+        tourId: 14,
+    },
+    {
+        id: 10,
+        name: 'Alossauro',
+        description: `Replica em tamanho real do fóssil de um Alossauro.`,
+        staticImage: '/images/structure/alossauro.jpeg',
+        tourId: 3,
     },
 
 ]
@@ -112,7 +166,7 @@ const activitiesList = [
         id: 1,
         type: "workshop",
         title: "Energias",
-        image: "https://images.pexels.com/photos/4338617/pexels-photo-4338617.jpeg?auto=compress&cs=tinysrgb&w=600",
+        images: ["https://images.pexels.com/photos/4338617/pexels-photo-4338617.jpeg?auto=compress&cs=tinysrgb&w=600"],
         description: `Em grupo, os estudantes analisam características de cidades fictícias e trabalham em um plano de gestão para ampliação e geração de energia. Neste processo, é possível compreender as variações de sua produção em usinas hidrelétricas, termoelétricas, termonucleares, eólicas e solares. Os grupos também discutem entre si sobre as soluções apresentadas mostrando vantagens e desvantagens do uso de cada matriz energética escolhida.`,
         subjects: [
             { title: "Ciências", color: "text-blue-300", },
@@ -141,7 +195,22 @@ const activitiesList = [
         id: 2,
         title: "A Família do Sol",
         type: "multimedia",
-        image: "https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Multimedias/A Familia do Sol/Banner Solar System.jpg",
+            "/images/Multimedias/A Familia do Sol/Ani Frame 04.bmp",
+            "/images/Multimedias/A Familia do Sol/Ani Frame 02.bmp",
+            "/images/Multimedias/A Familia do Sol/Ani Frame 03.bmp",
+            "/images/Multimedias/A Familia do Sol/Ani Frame 05.bmp",
+            "/images/Multimedias/A Familia do Sol/Familia do Sol Titulo.bmp",
+            "/images/Multimedias/A Familia do Sol/Jupiter Luas Galileanas.bmp",
+            "/images/Multimedias/A Familia do Sol/Jupiter Luas Pastoras.bmp",
+            "/images/Multimedias/A Familia do Sol/Mercurio Temperatura.bmp",
+            "/images/Multimedias/A Familia do Sol/Panel Planets Last Frame 3.bmp",
+            "/images/Multimedias/A Familia do Sol/Ship Saturno 2.jpg",
+            "/images/Multimedias/A Familia do Sol/Ship Saturno.jpg",
+            "/images/Multimedias/A Familia do Sol/Solar System.jpg",
+            // "/images/Multimedias/A Familia do Sol/Thumb Areas Base.psd",
+        ],
         description: `Simulação de uma viagem pelo Sistema Solar, onde visitamos o Sol, os oito planetas, luas mais importantes, cometas e asteróides. Para cada objeto descrevemos suas características físicas (tamanho, temperatura, composição) e orbitais (distância e período de revolução). Comparamos estas características com a Terra que é também detalhada ao final da viagem. Durante o passeio passamos pelas superfícies de alguns planetas e mostramos que a Terra é o único planeta com condições para abrigar seres vivos como nós.`,
         subjects: [
             { title: "Ciências", color: "text-blue-300", },
@@ -164,7 +233,9 @@ const activitiesList = [
         id: 3,
         title: "Gravidade Zero",
         type: "multimedia",
-        image: "https://images.pexels.com/photos/41005/rocket-launch-rocket-take-off-soyuz-41005.jpeg?auto=compress&cs=tinysrgb&w=600",
+        images: [
+            "/images/Multimedias/Gravidade Zero/image-1.jpeg"
+        ],
         description: `Iniciamos com uma rápida introdução a história da aviação e da astronáutica mostrando algumas pessoas que foram importantes neste campo da ciência, como Santos Dumont e Verner Von Braun. A seguir apresentamos os componentes e funções de alguns foguetes e sua evolução. Comenta-se sobre a exploração do espaço, desde a corrida espacial com destino a Lua até os dias de hoje com o turismo espacial. Finalmente exploramos como o corpo humano reage ao ambiente espacial e o que é preciso para ser um astronauta.`,
         subjects: [
             { title: "Astronáutica", color: 'text-blue-500', },
@@ -197,7 +268,10 @@ const activitiesList = [
         id: 4,
         title: "Geometria Cósmica",
         type: "multimedia",
-        image: "https://images.pexels.com/photos/7046423/pexels-photo-7046423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Multimedias/Gometria Cosmica/Relogio de Sol.jpg",
+            "/images/Multimedias/Gometria Cosmica/Sistema Geocentrico.jpg",
+        ],
         description: `Descrição da história da Astronomia com personagens importantes como Ptolomeu, Galileu e Copérnico e suas contribuições para nossa visão de Universo. A seguir explicam-se os fenômenos do Sistema Sol-Terra-Lua, incluindo calendários, estações do ano, fases da Lua e eclipses.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', }, 
@@ -228,7 +302,9 @@ const activitiesList = [
         id: 5,
         title: "Albedo 0.39",
         type: "multimedia",
-        image: "https://images.pexels.com/photos/1275393/pexels-photo-1275393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Multimedias/Albedo 0.39/Mount Sant Helens 01.jpg",
+        ],
         description: `Uma viagem de estudo do planeta Terra, onde são descritas as características da sua superfície, estrutura intera e fenômenos que ocorrem na crosta terrestre. São explicados a formação de vulções, cordilheiras de montanhas, deriva continental, terremotos, maremotos e suas conseqüências para nós.`,
         subjects: [
             { title: "Ciências", color: "text-blue-300", },
@@ -255,7 +331,11 @@ const activitiesList = [
         id: 6,
         title: "Jornada nas Estrelas",
         type: "multimedia",
-        image: "https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Multimedias/Jornada nas Estrelas/Cartog_Yellow_Star.jpg",
+            "/images/Multimedias/Jornada nas Estrelas/Sky Tour First Frame.jpg",
+            "/images/Multimedias/Jornada nas Estrelas/Stars Colours_Last_Frame.jpg",
+        ],
         description: `Viagem interestelar simulada, onde mostramos as características físicas das estrelas, como temperaturas, tamanhos, distâncias e classificações básicas. A seguir explica-se o ciclo de formação de estrelas no interior de nebulosas, os tipos de nebulosas e a destruição de estrelas que podem gerar objetos como pulsares e buracos negros.Também é explicado o conceito de galáxia e demonstrado o tamanho do Universo observável.`,
         subjects: [
             { title: "Ciências", color: "text-blue-300", },
@@ -286,7 +366,14 @@ const activitiesList = [
         id: 7,
         title: "Turma Alto Astral",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Planetarios/Alto Astral/Alto-Astral-01.png",
+            "/images/Planetarios/Alto Astral/Alto-Astral-02.png",
+            "/images/Planetarios/Alto Astral/Alto-Astral-03.png",
+            "/images/Planetarios/Alto Astral/Alto-Astral-04.png",
+            "/images/Planetarios/Alto Astral/Alto-Astral-05.png",
+            "/images/Planetarios/Alto Astral/Alto-Astral-06.png",
+        ],
         description: `Os alunos interagem com a turma alto astral em busca de pistas misteriosas para salvar o planeta Terra, incentivando a conscientização, respeito ao próximo, trabalho em grupo e a preservação do planeta.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', }, 
@@ -307,7 +394,9 @@ const activitiesList = [
         id: 8,
         title: "Endereço Espacial",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Planetarios/Endereço Espacial/Frame Endereco Espacial 01.jpg",
+        ],
         description: `Com os robozinhos Teka e Tiko, os alunos participam de uma aventura para salvar um bebê alienígena que se perdeu e veio parar na Terra. Nesta jornada, os estudantes acompanham o desafio de localizar a casa do bebê alienígena no universo e, geograficamente, aprendem a identificar regiões, bairros, estados, países, continentes, planetas, galáxias e grupos de galáxias para terem assim uma ideia geral do tamanho de nosso Universo.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', }, 
@@ -330,7 +419,12 @@ const activitiesList = [
         id: 9,
         title: "Filhos do Sol",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/954929/pexels-photo-954929.jpeg?auto=compress&cs=tinysrgb&w=600",
+        images: [
+            
+            "/images/Planetarios/Filhos do Sol/Filhos do Sol.jpg",
+            "/images/Planetarios/Filhos do Sol/Marte Frame.jpg",
+            "/images/Planetarios/Filhos do Sol/Saturno Frame.jpg",
+        ],
         description: `Através de um tour  pelo Sistema Solar, a sessão apresenta as principais características dos seus componentes, partindo da Terra em direção ao Sol e seguindo até os planetas, asteroides, planetas anões e cometas. Em cada componente são apresentadas as informações e caracteristicas mais relevantes associando ao conteúdo da grade de ciências abordados, principalmente, no Ensino Fundamental.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', }, 
@@ -355,7 +449,11 @@ const activitiesList = [
         id: 10,
         title: "Micromonstros",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/3992943/pexels-photo-3992943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Planetarios/Micromonstros/Piolhos 3200x3200.jpg",
+            "/images/Planetarios/Micromonstros/Pulga 3200x3200.jpg",
+            "/images/Planetarios/Micromonstros/Kid+Dog Capa.jpg",
+        ],
         description: `Em uma viagem microscópica, os estudantes podem conhecer alguns seres invisíveis aos nossos olhos e que podem nos fazer mal: piolhos, vermes, pulgas, carrapatos e bactérias em estilo de desenho animado. Tudo isso, explorando o mundo invisível no quarto de uma criança.`,
         subjects: [
             { title: "Biologia", color: 'text-green-200', }, 
@@ -385,7 +483,11 @@ const activitiesList = [
         id: 11,
         title: "Palco Celeste",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/2565420/pexels-photo-2565420.jpeg",
+        images: [
+            "/images/Planetarios/Palco Celeste/Palco Celeste Contelations.jpg",
+            "/images/Planetarios/Palco Celeste/Palco Celeste Frame 01.jpg",
+            "/images/Planetarios/Palco Celeste/Palco Celeste Frame 02.jpg",
+        ],
         description: `Essa sessão aborda a nossa visão do céu noturno, longe da poluição luminosa produzida pelas cidades e mostra o que podemos ver sem o uso de telescópios. É feito o reconhecimento de constelações de verão e inverno para o hemisfério Sul e a seguir viajamos no tempo para diferentes locais da Terra, para que o expectador presencie o acontecimento de eventos astronômicas como auroras, cometas e chuvas de meteoros.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', },
@@ -420,7 +522,7 @@ const activitiesList = [
         id: 12,
         title: "Irmãos de Gaia",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: ["https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
         description: `Essa sessão aborda a nossa visão do céu noturno, longe da poluição luminosa produzida pelas cidades e mostra o que podemos ver sem o uso de telescópios. É feito o reconhecimento de constelações de verão e inverno para o hemisfério Sul e a seguir viajamos no tempo para diferentes locais da Terra, para que o expectador presencie o acontecimento de eventos astronômicas como auroras, cometas e chuvas de meteoros.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', },
@@ -446,7 +548,10 @@ const activitiesList = [
         id: 13,
         title: "Vingança do Clima",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Planetarios/Vingança do Clima/Imagem Plana.jpg",
+            "/images/Planetarios/Vingança do Clima/Vinganca do Clima.jpg",
+        ],
         description: `Transportados para um futuro distante, os alunos conhecem seres extraterrestres que descobrem o planeta Terra e se deparam com as implicações, hoje previstas e que estão se concretizando, sobre o aquecimento global. São apresentados cenários futuros onde ocorreram o derretimento das geleiras e aumento do nível dos mares. São discutidos os impactos das intervenções humanas no equilíbrio do planeta.`,
         subjects: [
             { title: "Ciências", color: "text-blue-300", },
@@ -474,7 +579,10 @@ const activitiesList = [
         id: 14,
         title: "O Sopro da Vida",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/1586068/pexels-photo-1586068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Planetarios/Sopro da Vida/DNA - 1500x1500.jpg",
+            "/images/Planetarios/Sopro da Vida/Sopro da Vida Plano.jpg",
+        ],
         description: `A ideia dessa sessão é estudar a vida a partir de uma célula primordial. Para entender como a vida surgiu nos oceanos primitivos da Terra, voltamos no tempo, entramos em uma célula gigante para conhecer suas organelas. Dentro de um organismo, conhecemos alguns órgãos e sistemas até o cérebro humano.`,
         subjects: [
             { title: "Biologia", color: 'text-green-200', }, 
@@ -502,7 +610,7 @@ const activitiesList = [
         id: 15,
         title: "O Reino da Luz",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/15326066/pexels-photo-15326066/free-photo-of-show-concerto-apresentacao-sombrio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: ["https://images.pexels.com/photos/15326066/pexels-photo-15326066/free-photo-of-show-concerto-apresentacao-sombrio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
         description: `Com lindas imagens e olhando para as estrelas, os expectadores são convidados a contemplar e refletir filosoficamente sobre a origem do Universo e da vida como a conhecemos.`,
         subjects: [
             { title: "Biologia", color: 'text-green-200', }, 
@@ -526,7 +634,10 @@ const activitiesList = [
         id: 14,
         title: "Uma Noite com 100 Bilhões de Estrelas",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/2098427/pexels-photo-2098427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Planetarios/100 Bilhoes de Estrelas/Galaxia 01.jpg",
+            "/images/Planetarios/100 Bilhoes de Estrelas/Nebulosa de Orion.jpg",
+        ],
         description: `Em uma viagem espacial simulada, atravessamos a estrutura da Via Láctea para conhecer diferentes objetos astronômicos que compõem nossa Galáxia. A simulação proporciona a experiência de observar a paisagem de uma região até então, inalcansável para a humanidade.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', },
@@ -556,7 +667,10 @@ const activitiesList = [
         id: 15,
         title: "Universo Líquido",
         type: "planetarium",
-        image: "https://images.pexels.com/photos/10161677/pexels-photo-10161677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: [
+            "/images/Planetarios/Universo Líquido/Universo Liquido Plano.jpg",
+            "/images/Planetarios/Universo Líquido/Universo Liquido.jpg",
+        ],
         description: `Dada a importância da água líquida para o surgimento e manutenção da vida na Terra, a sessão apresenta a água enquanto substância química e sua importância como solvente universal. A seguir viajamos pelo Universo para explicar o origem da água e de seus elementos componentes, Hidrogênio e Oxigênio e ainda discutimos sua disponibilidade em outros locais no universo, como a nossa Lua, outros planetas e exoplanetas.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', },
@@ -585,7 +699,7 @@ const activitiesList = [
         id: 16,
         title: "Mundos Vivos",
         type: "workshop",
-        image: "https://images.pexels.com/photos/10161677/pexels-photo-10161677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: ["https://images.pexels.com/photos/10161677/pexels-photo-10161677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
         description: `Na primeira parte da oficina, os estudantes são divididos em grupos onde cada um representa um planeta, e seguindo instruções de medida, criam uma maquete em escala do Sistema Solar. A seguir é realizada uma gincana, onde os alunos são obrigados a discutir entre si e trocar informações para responder perguntas sobre os objetos do Sistema Solar.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', },
@@ -609,7 +723,7 @@ const activitiesList = [
         id: 17,
         title: "Fobos: O Fogute",
         type: "workshop",
-        image: "https://images.pexels.com/photos/87089/rocket-lift-off-liftoff-astronautics-87089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: ["https://images.pexels.com/photos/87089/rocket-lift-off-liftoff-astronautics-87089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
         description: `Inicialmente é feita uma breve introdução sobre a estrutura de um foguete, seu tipo de combustível e como será o roteiro da atividade. A seguir, na base de lançamento, com casamata para proteger a equipe e torre de lançamento, os alunos realizam os procedimentos para o lançamento de um minifoguete. Os estudantes trabalham em equipe e seus integrantes têm funções específicas como  para ignição, segurança e resgate.`,
         subjects: [
             { title: "Astronáutica", color: 'text-blue-500', },
@@ -640,7 +754,7 @@ const activitiesList = [
         id: 18,
         title: "O Céu na Régua e Compasso",
         type: "workshop",
-        image: "https://images.pexels.com/photos/15206853/pexels-photo-15206853/free-photo-of-crepusculo-cair-da-noite-fim-da-tarde-lago.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: ["https://images.pexels.com/photos/15206853/pexels-photo-15206853/free-photo-of-crepusculo-cair-da-noite-fim-da-tarde-lago.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
         description: `Nessa oficina a teoria se junta a prática. Cada estudante monta o seu próprio relógio solar horizontal e com matemática e geometria básicas, compreende o movimento aparente do Sol, aprende a posicionar seu relógio e compara com o relógio solar analemático no jardim do CEU.`,
         subjects: [
             { title: "Astronomia", color: 'text-blue-300', },
@@ -665,7 +779,7 @@ const activitiesList = [
         id: 19,
         title: "Identificação de Rochas",
         type: "workshop",
-        image: "https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: ["https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
         description: `Dentro da caverna cenográfica, é feita uma rápida introdução aos tipos de rocha que existem na Terra e sobre o ciclo de rochas. Também é fornecido um texto com pistas e um diagrama para auxiliar na identificação das rochas que serão encontradas nas paredes da caverna. Os alunos trabalham em grupos coletando as rochas simulando uma escavação. Em seguida, os grupos podem analisar as rochas com o objetivo de compreender o ciclo das rochas e identificar quais são as sedimentares, magmáticas e metamórficas. As amostras são de rochas reais extraídas de nove regiões específicas do Brasil.`,
         subjects: [
             { title: "Geologia", color: "text-orange-600", },
@@ -689,7 +803,7 @@ const activitiesList = [
         id: 20,
         title: "Desvendando Gaia ( Oficina de Fósseis )",
         type: "workshop",
-        image: "https://images.pexels.com/photos/2726724/pexels-photo-2726724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        images: ["https://images.pexels.com/photos/2726724/pexels-photo-2726724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
         description: `Num paredão com o perfil geológico do Estado de São Paulo no interior da Caverna, os alunos coletam réplicas de fósseis de diferentes períodos geológicos afim de descrevê-los: são dentes, pegadas, esqueletos e outros vestígios e restos, os quais os alunos identificam e classificam em suas planilhas de paleontólogos. Ao final da atividade, durante a exposição dos fósseis coletados, é possível demonstrar a evolução da complexidade dos organismos vivos através de uma linha do tempo.`,
         subjects: [
             { title: "Geografia", color: "text-orange-300", },
@@ -714,7 +828,7 @@ const activitiesList = [
         id: 21,
         type: "special",
         title: "Observação",
-        image: "/assets/telescopio-2.jpeg",
+        images: ["/assets/telescopio-2.jpeg"],
         description: `Na primeira parte da oficina, os estudantes são divididos em grupos onde cada um representa um planeta, e seguindo instruções de medida, criam uma maquete em escala do Sistema Solar. A seguir é realizada uma gincana, onde os alunos são obrigados a discutir entre si e trocar informações para responder perguntas sobre os objetos do Sistema Solar.`,
         subjects: [
             { title: "Inglês", color: "text-red-400", },
@@ -745,7 +859,7 @@ const activitiesList = [
         id: 22,
         type: "special",
         title: "Geo Show",
-        image: "/assets/stone-range-2.jpg",
+        images: ["/assets/stone-range-2.jpg"],
         description: `Inicialmente é feita uma breve introdução sobre a estrutura de um foguete, seu tipo de combustível e como será o roteiro da atividade. A seguir, na base de lançamento, com casamata para proteger a equipe e torre de lançamento, os alunos realizam os procedimentos para o lançamento de um minifoguete. Os estudantes trabalham em equipe e seus integrantes têm funções específicas como  para ignição, segurança e resgate.`,
         subjects: [
             { title: "Inglês", color: "text-red-400", },

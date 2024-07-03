@@ -12,10 +12,10 @@ const Hero = () => {
     const images = [
         "bg-cupula-noite",
         "bg-telescopio-dark",
-        "bg-telescopio-dark-2",
+        // "bg-telescopio-dark-2",
         "bg-telescopio-light",
         // "bg-stone-range-2",
-        // "bg-telescopio-1",
+        "bg-telescopio-1",
         // "bg-panoramic",
     ];
 

@@ -9,7 +9,6 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { SectionWrapper } from '@/hoc';
-import { activitiesList } from '@/contants';
 import { Button, Chip } from '@mui/material';
 import slugify from 'react-slugify';
 import { motion } from 'framer-motion'
@@ -70,15 +69,15 @@ function SingleTableActivities({ rows, title }: SingleTableActivitiesProps) {
                         </TableRow>
                     </TableHead>
                     <TableBody >
-                        {rows.map((row) => (
-                            <StyledTableRow key={row.name}>
+                        {rows.map((row, i) => (
+                            <StyledTableRow key={i}>
                                 <StyledTableCell component="th" scope="row">
                                     {row.name}
                                 </StyledTableCell>
-                                <StyledTableCell align="right">{row.multimedia.map(item => <p><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></p>)}</StyledTableCell>
-                                <StyledTableCell align="right">{row.planetarium.map(item => <p><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></p>)}</StyledTableCell>
-                                <StyledTableCell align="right">{row.workshop.map(item => <p><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></p>)}</StyledTableCell>
-                                <StyledTableCell align="right">{row.especial.map(item => <p><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></p>)}</StyledTableCell>
+                                <StyledTableCell align="right">{row.multimedia.map((item, i) => <div key={i}><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></div>)}</StyledTableCell>
+                                <StyledTableCell align="right">{row.planetarium.map((item, i) => <div key={i}><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></div>)}</StyledTableCell>
+                                <StyledTableCell align="right">{row.workshop.map((item, i) => <div key={i}><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></div>)}</StyledTableCell>
+                                <StyledTableCell align="right">{row.special.map((item, i) => <div key={i}><Chip label={item} className="!m-1" onClick={() => { onClickChip(item) }} /></div>)}</StyledTableCell>
                             </StyledTableRow>
                         ))}
                     </TableBody>
@@ -121,9 +120,9 @@ function TableActivities() {
                 </a>
             </Button>
         </div>
-        <SingleTableActivities rows={rowsFirst} title="Ensino Fundamental 1" />
-        <SingleTableActivities rows={rowsSecond} title="Ensino Fundamental 2" />
-        <SingleTableActivities rows={rowsThird} title="Ensino Médio" />
+        <SingleTableActivities key={1} rows={rowsFirst} title="Ensino Fundamental 1" />
+        <SingleTableActivities key={2} rows={rowsSecond} title="Ensino Fundamental 2" />
+        <SingleTableActivities key={3} rows={rowsThird} title="Ensino Médio" />
     </ThemeProvider>
 }
 

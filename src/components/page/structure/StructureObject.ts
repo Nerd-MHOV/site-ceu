@@ -5,12 +5,14 @@ export type pointType = {
     link: number;
 }
 export type pointStructureObjectType = {
+    id: number,
     points: pointType[],
     rotation?: positionType,
     url: string,
 }
 const structureObject: pointStructureObjectType[]  =  [
     {
+        id: 0,
         points: [
             {
                 name: 'Hall',
@@ -43,6 +45,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/01-entrada.JPG',
     },
     {
+        id: 1,
         points: [
             {
                 name: 'Entrada',
@@ -64,6 +67,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/02-hall.JPG',
     },
     {
+        id: 2,
         points: [
             {
                 name: 'Planetario',
@@ -90,6 +94,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/03-antessala.JPG',
     },
     {
+        id: 3,
         points: [
             {
                 name: 'Caverna',
@@ -120,6 +125,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/alossauro.jpg',
     },
     {
+        id: 4,
         points: [
             {
                 name: 'Arena',
@@ -140,6 +146,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/aquario.JPG',
     },
     {
+        id: 5,
         points: [
             {
                 name: 'Antessala',
@@ -149,13 +156,14 @@ const structureObject: pointStructureObjectType[]  =  [
             {
                 name: 'Hall',
                 position: [10, 0, -6],
-                link: 5,
+                link: 1,
             },
         ],
         rotation: [0,-1.6, 0],
         url: '/images/360/06-auditorio.JPG',
     },
     {
+        id: 6,
         points: [
             {
                 name: 'Foguete',
@@ -176,6 +184,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/base-de-lancamento.jpg',
     },
     {
+        id: 7,
         points: [
             {
                 name: 'Sair',
@@ -187,6 +196,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/08-caverna.JPG',
     },
     {
+        id: 8,
         points: [
             {
                 name: 'Sair',
@@ -197,6 +207,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/cupula.jpg',
     },
     {
+        id: 9,
         points: [
             {
                 name: 'Auditorio',
@@ -212,6 +223,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/entrada_auditorio.jpg',
     },
     {
+        id: 10,
         points: [
             {
                 name: 'Base de Lançamento',
@@ -242,6 +254,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/11-jardim.JPG',
     },
     {
+        id: 11,
         points: [
             {
                 name: 'Caverna',
@@ -267,6 +280,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/geoshow.jpg',
     },
     {
+        id: 12,
         points: [
             {
                 name: 'Base',
@@ -277,6 +291,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/lancamento-foguetes.jpg',
     },
     {
+        id: 13,
         points: [
             {
                 name: 'Sair',
@@ -288,6 +303,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/14-planetario.JPG',
     },
     {
+        id: 14,
         points: [
             {
                 name: 'Jardim',
@@ -313,6 +329,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/relogio-de-sol.jpg',
     },
     {
+        id: 15,
         points: [
             {
                 name: 'Entrada',
@@ -328,6 +345,7 @@ const structureObject: pointStructureObjectType[]  =  [
         url: '/images/360/16-stonehenge.JPG',
     },
     {
+        id: 16,
         points: [
             {
                 name: 'Geoshow',

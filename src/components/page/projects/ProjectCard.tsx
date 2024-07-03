@@ -10,7 +10,7 @@ interface ProjectCardProps extends Item {
     index: number
 }
 const ProjectCard: React.ComponentType<ProjectCardProps> = ({
-    index, title, description, tags, image, subjects
+    index, title, description, tags, images, subjects
 }) => {
     const searchParams = useSearchParams();
     return (
@@ -24,7 +24,7 @@ const ProjectCard: React.ComponentType<ProjectCardProps> = ({
             >
                 <motion.div className="relative w-full h-[230px]">
                     <motion.img
-                        src={image}
+                        src={images[0]}
                         alt={title}
                         className='w-full h-full object-cover rouded-2xl'
                     />

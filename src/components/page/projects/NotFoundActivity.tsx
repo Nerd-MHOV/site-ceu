@@ -16,7 +16,7 @@ const NotFoundActivity = ({type}: NotFoundActivisProps) => {
             <p
                 className='mt-3 text-secondary text-[17px] max-w-3xl  leading-[30px] mb-3 text-center'
             >
-             Infelizmente não encontramos nenhuma atividade <br /> de "{type.toUpperCase()}" para seu filtro
+             Infelizmente não encontramos nenhuma atividade <br /> de &quot;{type.toUpperCase()}&quot; para seu filtro
             </p>
         </div>
 

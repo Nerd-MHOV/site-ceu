@@ -9,7 +9,8 @@ import Image from "next/image";
 
 const Navbar = ({ initHidden = false }) => {
     const { scrollYProgress } = useScroll()
-    const top = initHidden ? useTransform(scrollYProgress, [0, 0.1], [-200, 0]) : 0;
+    const transform = useTransform(scrollYProgress, [0, 0.1], [-200, 0])
+    const top = initHidden ? transform : 0;
     return (
         <motion.div
             style={{ top }}

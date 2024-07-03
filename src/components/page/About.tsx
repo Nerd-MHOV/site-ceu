@@ -57,8 +57,8 @@ const About = () => {
                 proporcionando atividades que complementam o currículo escolar de forma pragmática, com uma linguagem
                 popular e em um ambiente descontraído.
 
-                Ao mesmo tempo, são oferecidas sessões de atendimento ao público, buscando divulgar a astronomia por meio
-                da vivência de observar o Universo lá fora usando modernos telescópios e viajar por ele em nosso
+                Também são oferecidas sessões de atendimento ao público, buscando divulgar a astronomia por meio
+                da observação o Universo lá fora usando modernos telescópios e viajando por ele em nosso
                 planetário digital.
             </motion.p>
 

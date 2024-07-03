@@ -106,7 +106,7 @@ const SchoolContent = () => {
                 variants={slideIn('left', 'tween', 0.2, 1)}
                 className='bg-black-200 p-10 rounded-3xl md:mx-32 my-16 w-auto'
             >
-                <p className="text-white font-black text-[48px]">"</p>
+                <p className="text-white font-black text-[48px]">&quot;</p>
 
                 <div className="mt-1">
                     <p

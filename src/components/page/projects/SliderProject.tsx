@@ -13,7 +13,7 @@ type tagsAndSubjects = {
 export interface Item {
     id: number,
     title: string,
-    image: string,
+    images: string[],
     description: string,
     subjects: tagsAndSubjects[],
     tags: tagsAndSubjects[],
@@ -27,8 +27,7 @@ interface SliderProjectProps {
 }
 
 const SliderProject: React.ComponentType<SliderProjectProps> = ({ title, subTitle, description, items, animated = true}) => {
-    if ( items.length === 0 ) return null
-
+    
     const searchParams = useSearchParams();
     const content = useRef<HTMLDivElement>(null);
     const [width, setWidth] = useState(0);
@@ -39,6 +38,7 @@ const SliderProject: React.ComponentType<SliderProjectProps> = ({ title, subTitl
             setWidth(content.current.scrollWidth - content.current.offsetWidth)
     }, [searchParams])
 
+    if ( items.length === 0 ) return null
 
     return (
         <div className="mt-20">
@@ -65,7 +65,7 @@ const SliderProject: React.ComponentType<SliderProjectProps> = ({ title, subTitl
                     dragConstraints={{ right: 0, left: -width }}
                     initial={{ x: 0 }}
                     animate={searchParams.size == 0 ? { x: -width } : {}}
-                    transition={searchParams.size == 0 ? { duration: items.length * 2, ease: 'linear', repeat: Infinity } : {}}
+                    transition={searchParams.size == 0 ? { duration: items.length * 2.5, ease: 'linear', repeat: Infinity } : {}}
 
                 >
 

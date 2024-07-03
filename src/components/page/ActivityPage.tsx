@@ -14,7 +14,7 @@ interface ActivityPageProps {
         id: number;
         type: string;
         title: string;
-        image: string;
+        images: string[];
         description: string;
         subjects: {
             title: string;
@@ -28,11 +28,11 @@ interface ActivityPageProps {
     }
 }
 
-const imageListSlider = [
-    '/images/school/school-1.jpg',
-    '/images/school/school-2.jpg',
-    '/images/school/school-3.jpg',
-]
+// const imageListSlider = [
+//     '/images/school/school-1.jpg',
+//     '/images/school/school-2.jpg',
+//     '/images/school/school-3.jpg',
+// ]
 
 
 const ActivityPage = ({ activity }: ActivityPageProps) => {
@@ -45,7 +45,7 @@ const ActivityPage = ({ activity }: ActivityPageProps) => {
             }
         })}>
             <div className="relative h-screen w-full">
-                <img src={activity.image} alt="" className='w-full h-full object-cover' />
+                <img src={activity.images[0]} alt="" className='w-full h-full object-cover' />
                 <div className="bg-gradient-to-t from-primary from-30% to-transparent bottom-0 left-0 absolute w-full text-center ">
                     <h1 className={`${styles.sectionHeadText} m-auto py-10 tracking-widest !text-bold`}>{activity.title}</h1>
                 </div>
@@ -120,7 +120,7 @@ const ActivityPage = ({ activity }: ActivityPageProps) => {
                 </div>
 
                 <div className='mt-16'>
-                    <PhotoSlider images={imageListSlider} />
+                    <PhotoSlider images={activity.images} />
                 </div>
 
                 <a href={`/atividades?${searchParams.toString()}`} className='flex flex-row justify-end w-full mt-20 items-center gap-2'>
