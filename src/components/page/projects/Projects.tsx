@@ -1,10 +1,12 @@
 'use client'
-import { SectionWrapper } from '@/hoc'
+import { SectionWrapper, SectionWrapperComponent } from '@/hoc'
 import { activitiesList } from "@/contants"
 import SliderProject from "./SliderProject"
 import { useSearchParams } from 'next/navigation'
 import Filter from '@/components/page/projects/Filter'
 import { Suspense } from 'react'
+import { motion } from 'framer-motion'
+import { slideIn } from '@/utils/motion'
 
 const Projects = () => {
     const searchParams = useSearchParams();
@@ -46,6 +48,35 @@ const Projects = () => {
                 E em uma apresentação noturna, cheia de efeitos especiais, venha conhecer a história geologica do planeta Terra.'
             />
 
+
+            <SectionWrapperComponent>
+                <motion.div
+                    variants={slideIn('left', 'tween', 0.2, 1)}
+                    className='bg-black-200 p-10 rounded-3xl md:mx-32 my-8 w-auto'
+                >
+                    <p className="text-white font-black text-[48px]">&quot;</p>
+
+                    <div className="mt-1">
+                        <p
+                            className='text-white tracking-wider text-[18px]'
+                        >A ciência é muito mais do que um corpo de conhecimento. É uma maneira de pensar.</p>
+                        <div className="mt-7 flex justify-between items-center gap-1">
+                            <div className="flex-1 flex flex-col">
+                                <p className='text-white font-medium text-[16px]'>
+                                    <span className='blue-text-gradient'>@</span> Carl Sagan
+                                </p>
+                                <p className='mt-1 text-secondary text-[12px]'>Cientista planetário e astrônomo</p>
+                            </div>
+
+                            <img
+                                src={'https://cdn.britannica.com/36/194736-050-CA5BE18B/Carl-Sagan-science-writer-American.jpg'}
+                                alt={`by-Carl-Sagan`}
+                                className='w-32 h-32 rounded-full object-cover'
+                            />
+                        </div>
+                    </div>
+                </motion.div>
+            </SectionWrapperComponent>
         </>
     )
 }

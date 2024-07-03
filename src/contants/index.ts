@@ -972,11 +972,11 @@ const publicActivities = [
         company_name: "por Telescópio",
         icon: observacao,
         iconBg: "#E6DEDD",//"#383E56",
-        date: "A atividade está sujeita às condições meteorológicas. Em caso de céu nublado/chuvoso, ela será substituída e o público receberá um voucher para retornar e realizar a observação gratuitamente em outra noite de atendimento ao público e mediante a aviso prévio.",
+        date: "A atividade está sujeita às condições meteorológicas. Em caso de céu nublado/chuvoso, ela será substituída e o público receberá um voucher para retornar e realizar a observação gratuitamente em outra noite de atendimento ao público e mediante aviso prévio.",
         points: [
-            "Em noites com boas condições do tempo, a observção é a primeira atividade realizada.",
+            "Em noites com boas condições do tempo, a observação é a primeira atividade realizada.",
             "O público é levado para o Auditório, onde recebe instruções sobre as atividades da noite e as técnicas de observação.",
-            "Após a introdução, as pessoas sobem até a laje de observação. Os professores realizam o reconhecimento de céu e explicam sobre os objetos que serão vistos.",
+            "Após a introdução, as pessoas sobem até a laje de observação onde os professores realizam o reconhecimento de céu e explicam sobre os objetos que serão vistos.",
             "A quantidade de telescópios e de astros a serem observados ficam a critério dos professores.",
         ],
     },
@@ -988,7 +988,7 @@ const publicActivities = [
         date: "",
         points: [
             "Após um breve intervalo entre a observação e a segunda atividade, o público é levado ao planetário, onde assiste à uma sessão de contemplação dos objetos no céu.",
-            "Durante todo o período de atividades e mesmo após o planetário, os professores ficarão dispostos a tirar dúvidas e ouvir os comentários das pessoas que desejarem fazê-lo.",
+            "Durante todo o período de atividades e mesmo após o planetário, os professores estarão disponíveis a tirar dúvidas e ouvir os comentários das pessoas que desejarem fazê-lo.",
             "Ao término do planetário, o público já fica liberado para, se assim desejar, deixar o CEU e retornar à Terra.",
         ],
     },

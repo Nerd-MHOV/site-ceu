@@ -35,10 +35,10 @@ const PublicService = () => {
                         </BoxText.TitleBox>
                         <BoxText.Paragraph>
                             O C.E.U. (Centro de Estudos do Universo) possui a capacidade máxima de 120 pessoas
-                            por sessão de atendimento ao público. Por esse motivo, em algumas noites é aberta sessão extra às 23h.
+                            por sessão de atendimento ao público.
                             <br />
-                            O agendamento da sua visita não é obrigatório, mas sem ele, nada garante que poderemos 
-                            receber você aqui, pois o voucher é sua garantia de que seu lugar e de sua familia estarão guardados esperando vocês.
+                            O agendamento da sua visita é obrigatório, pois sem ele, nada garante que poderemos 
+                            receber você aqui, o voucher é sua garantia de que seu lugar e de sua familia estarão guardados esperando vocês.
                             <br />
                             Você pode agendar sua visita, pelo nosso WhatsApp, pelo instagram ou ainda Ligando no nosso Telefone.
                         </BoxText.Paragraph>

@@ -46,6 +46,8 @@ const config: Config = {
         "school-1": "url('/images/school/school-1.jpg')",
         "school-2": "url('/images/school/school-2.jpg')",
         "school-3": "url('/images/school/school-3.jpg')",
+        "school-4": "url('/images/school/school-4.jpg')",
+        "school-5": "url('/images/school/school-5.jpg')",
       },
     },
   },

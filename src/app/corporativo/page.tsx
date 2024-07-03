@@ -35,7 +35,7 @@ const Corporate = () => {
                         <BoxText.SubtitleSimple text="Ideal para reuniões e dinâmicas de equipe" />
                     </BoxText.TitleBox>
                     <BoxText.Paragraph>
-                        A Sala Marte, salão do C.E.U. (Centro de Estudos do Universo) conhecido como “Aquário”,
+                        A Sala Marte, conhecido como “Aquário”,
                         ocupa um espaço bastante amplo, com lotação podendo chegar a 100 pessoas,
                         dependendo da configuração requisitada pela realização do evento.
                         <br />

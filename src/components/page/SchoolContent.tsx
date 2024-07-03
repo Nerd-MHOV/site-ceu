@@ -9,7 +9,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const SchoolContent = () => {
     return <>
-         <div className={`bg-school-2 mt-16 w-full h-[600px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
+         <div className={`bg-school-4 mt-16 w-full h-[600px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
         ></div>
         <SectionWrapperComponent>
             <motion.div variants={textVariant()}>
@@ -25,11 +25,11 @@ const SchoolContent = () => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="mt-4 text-secondary text-[20px] max-w-3xl leading-[30px]"
             >
-                No C.E.U. (Centro de Estudos do Universo), os estudantes são levados a experimentar a ciência na prática e entender seu uso no
+                Aqui os estudantes são levados a experimentar a ciência na prática e entender seu uso no
                 dia-a-dia, com atividades que vão desde oficinas pedagógicas até sessões de planetário digital, onde as
-                crianças viajam para além da superfície da Terra. Vão do espaço ao centro do nosso planeta.<br />
+                crianças viajam para além da superfície da Terra.
                 As atividades são conduzidas por professores de diversas áreas do conhecimento formados em renomadas
-                Universidades do Brasil.<br />
+                Universidades do Brasil.
                 Com uma linguagem popular e em um ambiente descontraído, os estudantes têm todo o apoio necessário para
                 aprender, sanar as dúvidas e se entender como parte do Universo.
             </motion.p>
@@ -99,7 +99,7 @@ const SchoolContent = () => {
                 </motion.div>
             </a>
         </SectionWrapperComponent>
-        <div className={`bg-school-3 w-full h-[600px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
+        <div className={`bg-school-5 w-full h-[600px] bg-cover bg-no-repeat sm:bg-fixed bg-center `}
         ></div>
         <SectionWrapperComponent>
             <motion.div
