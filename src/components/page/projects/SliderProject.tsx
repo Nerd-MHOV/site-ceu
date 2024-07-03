@@ -50,9 +50,8 @@ const SliderProject: React.ComponentType<SliderProjectProps> = ({ title, subTitl
             <div className='w-full flex'>
                 <motion.p
                     className='mt-3 text-secondary text-[17px] max-w-3xl  leading-[30px] mb-3'
-                >
-                    {description}
-                </motion.p>
+                    dangerouslySetInnerHTML={{ __html: description}}
+                />
             </div>
             <motion.div
                 className='cursor-grab overflow-hidden'

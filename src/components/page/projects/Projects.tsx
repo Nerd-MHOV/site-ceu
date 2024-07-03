@@ -23,37 +23,27 @@ const Projects = () => {
                 items={filter.filter(activity => activity.type === "multimedia")}
                 title='Multimídias'
                 subTitle=''
-                description='Following projects showcases my skills and experience through real-world examples of my work. Each
-                    project is briefly described with links to code repositories and live demos in it. It reflects my
-                    ability to solve complex problems, work with different technologies, and manage projects
-                    effectively.'
+                description='São apresentações feitas em nosso auditório por professores especializados na área e com recursos de computação gráfica de alto nível. 
+                São desenvolvidos temas de astronomia, astronáutica e geologia e o recurso de apresentações feitas ao vivo permite ao professor adequar o conteúdo a faixa etária '
             />
             <SliderProject
                 items={filter.filter(activity => activity.type === "workshop")}
                 title='Oficinas'
                 subTitle=''
-                description='Following projects showcases my skills and experience through real-world examples of my work. Each
-                    project is briefly described with links to code repositories and live demos in it. It reflects my
-                    ability to solve complex problems, work with different technologies, and manage projects
-                    effectively.'
+                description='No Centro de Estudo do Universo, convidamos você a participar de nossas oficinas de vivência interativa, onde exploramos os fascinantes mundos da astronomia e da geologia. São projetadas para proporcionar uma experiência educativa e imersiva, permitindo que os participantes mergulhem nas maravilhas do cosmos e nos segredos da Terra.'
             />
             <SliderProject
                 items={filter.filter(activity => activity.type === "planetarium")}
                 title='Planetários'
                 subTitle=''
-                description='Following projects showcases my skills and experience through real-world examples of my work. Each
-                    project is briefly described with links to code repositories and live demos in it. It reflects my
-                    ability to solve complex problems, work with different technologies, and manage projects
-                    effectively.'
+                description='Oferecemos uma experiência única e imersiva através de nossas sessões de planetário. Aqui, exploramos os mistérios do cosmos e os fascinantes mundos da biologia e geologia. As sessões projetadas em domo (360ºx180º) são criadas por nossa equipe e projetadas para despertar a curiosidade e ampliar o conhecimento dos participantes de todas as idades.'
             />
             <SliderProject
                 items={filter.filter(activity => activity.type === "special")}
-                title='Especiais'
+                title='Atividades Especiais'
                 subTitle=''
-                description='Following projects showcases my skills and experience through real-world examples of my work. Each
-                    project is briefly described with links to code repositories and live demos in it. It reflects my
-                    ability to solve complex problems, work with different technologies, and manage projects
-                    effectively.'
+                description='Venha contemplar o universo fazendo a observação dos astros diretamente com nossos telescópios de alta tecnologia, aqui será possivel a observação de estrelas, planetas, nebulosas e galáxias. <br>
+                E em uma apresentação noturna, cheia de efeitos especiais, venha conhecer a história geologica do planeta Terra.'
             />
 
         </>

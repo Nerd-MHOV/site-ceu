@@ -66,7 +66,7 @@ const structure = [
     {
         id: 1,
         name: 'Planetário',
-        description: `Sala com capacidade de 65 pessoas, com teto em formato de domo, onde são projetadas imagens através de um projetor em formato 180ºx360º. Seu formato digital permite a exibição de filmes imersivos de várias aréas do conhecimento humano.`,
+        description: `Sala com capacidade de 65 pessoas, com teto em formato de domo, onde são projetadas imagens através de um projetor em formato 360ºx180º. Seu formato digital permite a exibição de filmes imersivos de várias aréas do conhecimento humano.`,
         staticImage: '/images/structure/planetario.jpg',
         tourId: 13,
     },
@@ -828,7 +828,13 @@ const activitiesList = [
         id: 21,
         type: "special",
         title: "Observação",
-        images: ["/assets/telescopio-2.jpeg"],
+        images: [
+            '/images/atendimentoPublico/publico-8.jpg ',
+            '/images/atendimentoPublico/obs-sara.jpg ',
+            "/assets/telescopio-2.jpeg",
+            '/images/atendimentoPublico/publico-10.jpg ',
+            '/images/atendimentoPublico/publico-11.jpg',
+        ],
         description: `Na primeira parte da oficina, os estudantes são divididos em grupos onde cada um representa um planeta, e seguindo instruções de medida, criam uma maquete em escala do Sistema Solar. A seguir é realizada uma gincana, onde os alunos são obrigados a discutir entre si e trocar informações para responder perguntas sobre os objetos do Sistema Solar.`,
         subjects: [
             { title: "Inglês", color: "text-red-400", },
@@ -859,7 +865,11 @@ const activitiesList = [
         id: 22,
         type: "special",
         title: "Geo Show",
-        images: ["/assets/stone-range-2.jpg"],
+        images: [
+            '/images/structure/geoshow-nite.jpeg',
+            '/images/structure/geo-show.jpeg',
+            '/images/structure/geoshow2.jpeg',
+        ],
         description: `Inicialmente é feita uma breve introdução sobre a estrutura de um foguete, seu tipo de combustível e como será o roteiro da atividade. A seguir, na base de lançamento, com casamata para proteger a equipe e torre de lançamento, os alunos realizam os procedimentos para o lançamento de um minifoguete. Os estudantes trabalham em equipe e seus integrantes têm funções específicas como  para ignição, segurança e resgate.`,
         subjects: [
             { title: "Inglês", color: "text-red-400", },

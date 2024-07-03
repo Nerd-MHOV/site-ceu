@@ -198,7 +198,7 @@ const Filter = () => {
                 mode: 'dark',
             }
         })}>
-            <div className='flex w-full gap-2 items-center justify-end mt-20'>
+            <div className='flex w-full gap-2 items-center justify-end mt-5'>
                 
                 <Button variant='outlined' color={color} startIcon={icon} onClick={handleClickOpen}>
                     <p className='normal-case'>Filtro</p>
