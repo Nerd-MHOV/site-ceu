@@ -270,6 +270,11 @@ const structureObject: pointStructureObjectType[]  =  [
                 link: 4,
             },
             {
+                name: 'Teatro de Arena',
+                position: [-10, 0, 10],
+                link: 16,
+            },
+            {
                 name: 'Relogio de Sol',
                 position: [-12, 0, -15],
                 link: 14,
@@ -288,10 +293,11 @@ const structureObject: pointStructureObjectType[]  =  [
         points: [
             {
                 name: 'Base',
-                position: [30, 2, 0],
+                position: [-10, 3, -10],
                 link: 6,
             },
         ],
+        rotation: [0, 2.3, 0],
         url: '/images/360/lancamento-foguetes.JPG',
     },
     {
@@ -354,15 +360,16 @@ const structureObject: pointStructureObjectType[]  =  [
         points: [
             {
                 name: 'Geoshow',
-                position: [-2, 0, -20],
+                position: [-12, 0, -2],
                 link: 11,
             },
             {
                 name: 'Entrada',
-                position: [-5, 0, 20],
+                position: [12, 0, 2],
                 link: 0,
             },
         ],
+        rotation: [0, -1, 0],
         url: '/images/360/teatro-de-arena.JPG',
     },
 ]
