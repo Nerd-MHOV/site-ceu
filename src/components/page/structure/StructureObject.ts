@@ -98,31 +98,32 @@ const structureObject: pointStructureObjectType[]  =  [
         points: [
             {
                 name: 'Caverna',
-                position: [40, 4, -40],
+                position: [14, 2, -17],
                 link: 7,
             },
             {
                 name: 'Geoshow',
-                position: [30, 0, -10],
+                position: [0, 0, -20],
                 link: 11,
             },
             {
                 name: 'Aquario',
-                position: [30, 1, 4],
+                position: [20, 1, 2],
                 link: 4,
             },
             {
                 name: 'Relogio de Sol',
-                position: [4, 0, 30],
+                position: [8, 0, 17],
                 link: 14,
             },
             {
                 name: 'Jardim',
-                position: [15, 0, 40],
+                position: [4, 1, 20],
                 link: 10,
             },
         ],
-        url: '/images/360/alossauro.jpg',
+        rotation: [0 , -1 ,0],
+        url: '/images/360/alossauro.JPG',
     },
     {
         id: 4,
@@ -167,21 +168,22 @@ const structureObject: pointStructureObjectType[]  =  [
         points: [
             {
                 name: 'Foguete',
-                position: [-30, -4, 0],
+                position: [20, -4, -6],
                 link: 12,
             },
             {
                 name: 'Jardim',
-                position: [5, -2, 20],
+                position: [-10, -1, -2],
                 link: 10,
             },
             {
                 name: 'Antessala',
-                position: [18, -1, 28],
+                position: [-18, -1, -10],
                 link: 2,
             },
         ],
-        url: '/images/360/base-de-lancamento.jpg',
+        rotation: [0, 1.2, 0],
+        url: '/images/360/base-de-lancamento.JPG',
     },
     {
         id: 7,
@@ -227,30 +229,31 @@ const structureObject: pointStructureObjectType[]  =  [
         points: [
             {
                 name: 'Base de Lançamento',
-                position: [-10, 0, 10],
+                position: [15, 0, 0],
                 link: 6,
             },
             {
                 name: 'Antessala',
-                position: [20, 2, -6],
+                position: [-10, 2, -9],
                 link: 2,
             },
             {
                 name: 'Alossauro',
-                position: [-10, 2, -10],
+                position: [-2, 1, 16],
                 link: 3,
             },
             {
                 name: 'Relogio de Sol',
-                position: [-15, 2, -8],
+                position: [2, 1, 16],
                 link: 14,
             },
             {
                 name: 'Aquario',
-                position: [0, 1, -15],
+                position: [-10, 1, 10],
                 link: 4,
             },
         ],
+        rotation: [0, -4, 0],
         url: '/images/360/11-jardim.JPG',
     },
     {
@@ -258,26 +261,27 @@ const structureObject: pointStructureObjectType[]  =  [
         points: [
             {
                 name: 'Caverna',
-                position: [-1, 0, -20],
+                position: [0, 0, 18],
                 link: 7,
             },
             {
                 name: 'Aquario',
-                position: [30, 0, 0],
+                position: [-15, 0, 0],
                 link: 4,
             },
             {
                 name: 'Relogio de Sol',
-                position: [15, 0, 20],
+                position: [-12, 0, -15],
                 link: 14,
             },
             {
                 name: 'Alossauro',
-                position: [0, 0, 20],
+                position: [-1, 0, -15],
                 link: 3,
             },
         ],
-        url: '/images/360/geoshow.jpg',
+        rotation: [0, 1.7, 0],
+        url: '/images/360/geoshow.JPG',
     },
     {
         id: 12,
@@ -288,7 +292,7 @@ const structureObject: pointStructureObjectType[]  =  [
                 link: 6,
             },
         ],
-        url: '/images/360/lancamento-foguetes.jpg',
+        url: '/images/360/lancamento-foguetes.JPG',
     },
     {
         id: 13,
@@ -326,7 +330,8 @@ const structureObject: pointStructureObjectType[]  =  [
                 link: 4,
             },
         ],
-        url: '/images/360/relogio-de-sol.jpg',
+        rotation: [0, 1.5, 0],
+        url: '/images/360/relogio-de-sol.JPG',
     },
     {
         id: 15,
@@ -358,7 +363,7 @@ const structureObject: pointStructureObjectType[]  =  [
                 link: 0,
             },
         ],
-        url: '/images/360/teatro-de-arena.jpg',
+        url: '/images/360/teatro-de-arena.JPG',
     },
 ]
 
