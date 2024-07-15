@@ -234,7 +234,11 @@ const activitiesList = [
         title: "Gravidade Zero",
         type: "multimedia",
         images: [
-            "/images/Multimedias/Gravidade Zero/image-1.jpeg"
+            "/images/Multimedias/Gravidade Zero/image-5.jpeg",
+            "/images/Multimedias/Gravidade Zero/image-3.jpeg",
+            "/images/Multimedias/Gravidade Zero/image-1.jpeg",
+            "/images/Multimedias/Gravidade Zero/image-2.jpeg",
+            "/images/Multimedias/Gravidade Zero/image-4.jpeg",
         ],
         description: `Iniciamos com uma rápida introdução a história da aviação e da astronáutica mostrando algumas pessoas que foram importantes neste campo da ciência, como Santos Dumont e Verner Von Braun. A seguir apresentamos os componentes e funções de alguns foguetes e sua evolução. Comenta-se sobre a exploração do espaço, desde a corrida espacial com destino a Lua até os dias de hoje com o turismo espacial. Finalmente exploramos como o corpo humano reage ao ambiente espacial e o que é preciso para ser um astronauta.`,
         subjects: [
@@ -271,6 +275,9 @@ const activitiesList = [
         images: [
             "/images/Multimedias/Gometria Cosmica/Relogio de Sol.jpg",
             "/images/Multimedias/Gometria Cosmica/Sistema Geocentrico.jpg",
+            "/images/Multimedias/Gometria Cosmica/image1.jpeg",
+            "/images/Multimedias/Gometria Cosmica/image2.jpeg",
+            "/images/Multimedias/Gometria Cosmica/image3.jpeg",
         ],
         description: `Descrição da história da Astronomia com personagens importantes como Ptolomeu, Galileu e Copérnico e suas contribuições para nossa visão de Universo. A seguir explicam-se os fenômenos do Sistema Sol-Terra-Lua, incluindo calendários, estações do ano, fases da Lua e eclipses.`,
         subjects: [
@@ -303,7 +310,14 @@ const activitiesList = [
         title: "Albedo 0.39",
         type: "multimedia",
         images: [
+            "/images/Multimedias/Albedo 0.39/Capturar 05.PNG",
             "/images/Multimedias/Albedo 0.39/Mount Sant Helens 01.jpg",
+            "/images/Multimedias/Albedo 0.39/Capturar 01.PNG",
+            "/images/Multimedias/Albedo 0.39/Capturar 02.PNG",
+            "/images/Multimedias/Albedo 0.39/Capturar 03.PNG",
+            "/images/Multimedias/Albedo 0.39/Capturar 04.PNG",
+            "/images/Multimedias/Albedo 0.39/Capturar 06.PNG",
+            "/images/Multimedias/Albedo 0.39/Capturar 07.PNG",
         ],
         description: `Uma viagem de estudo do planeta Terra, onde são descritas as características da sua superfície, estrutura intera e fenômenos que ocorrem na crosta terrestre. São explicados a formação de vulções, cordilheiras de montanhas, deriva continental, terremotos, maremotos e suas conseqüências para nós.`,
         subjects: [
@@ -335,6 +349,7 @@ const activitiesList = [
             "/images/Multimedias/Jornada nas Estrelas/Cartog_Yellow_Star.jpg",
             "/images/Multimedias/Jornada nas Estrelas/Sky Tour First Frame.jpg",
             "/images/Multimedias/Jornada nas Estrelas/Stars Colours_Last_Frame.jpg",
+            "/images/Multimedias/Jornada nas Estrelas/image1.jpeg",
         ],
         description: `Viagem interestelar simulada, onde mostramos as características físicas das estrelas, como temperaturas, tamanhos, distâncias e classificações básicas. A seguir explica-se o ciclo de formação de estrelas no interior de nebulosas, os tipos de nebulosas e a destruição de estrelas que podem gerar objetos como pulsares e buracos negros.Também é explicado o conceito de galáxia e demonstrado o tamanho do Universo observável.`,
         subjects: [
