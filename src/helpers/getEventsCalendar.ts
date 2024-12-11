@@ -2,7 +2,7 @@
 import {format} from 'date-fns'
 
 async function featchEventsCalendar() {
-    return fetch('http://187.63.83.165:3336/session')
+    return fetch('https://api.ceubrotas.com.br/session')
         .then( response => {
             if (!response.ok) {
                 return []

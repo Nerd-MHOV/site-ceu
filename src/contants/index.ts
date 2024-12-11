@@ -914,14 +914,17 @@ const services = [
     {
         title: "Atendimento ao Público",
         icon: web,
+        link: '/publico'
     },
     {
         title: "Escolas & Colégios",
         icon: mobile,
+        link: '/escolas'
     },
     {
         title: "Eventos Corporativos",
         icon: creator,
+        link: '/corporativo'
     },
 ];
 

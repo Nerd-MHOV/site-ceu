@@ -20,15 +20,17 @@ const Calendar = () => {
     }, [])
     
     return (
-       <div className="max-w-2xl mx-auto px-3 mt-12">
+       <div className="max-w-lg h-[600px] mx-auto px-3 mt-12">
          <FullCalendar
         plugins={[ dayGridPlugin ]}
         initialView="dayGridMonth"
         locale={ptBR}
         themeSystem='Slate'
+        height={550}
         events={event}
         //   eventColor='#ffce44'
       />
+      <p>*As tarjas <b className='text-blue-400'>azuis</b> representam os <b>DIAS</b> e o <b>HORÁRIO</b> das sessões <b>abertas ao público</b>.</p>
        </div>
     );
 }

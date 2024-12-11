@@ -7,15 +7,18 @@ import {services} from "@/contants"
 import {fadeIn, textVariant} from "@/utils/motion"
 import {SectionWrapper} from "@/hoc";
 import Image, {StaticImageData} from "next/image";
+import Link from 'next/link'
 
 interface ServiceCard {
     index: number,
     title: string,
+    link: string,
     icon: StaticImageData,
 }
-const ServiceCard: React.ComponentType<ServiceCard> = ({index, title, icon}) => {
+const ServiceCard: React.ComponentType<ServiceCard> = ({index, title, icon, link}) => {
     return (
         <Tilt className="w-full max-w-[20rem] " >
+            <Link href={link}>
             <motion.div
                 variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
                 className="green-pink-gradient p-[1px] rounded-[20px] shadow-card"
@@ -32,6 +35,7 @@ const ServiceCard: React.ComponentType<ServiceCard> = ({index, title, icon}) => 
                     <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
                 </div>
             </motion.div>
+            </Link>
         </Tilt>
     )
 }
@@ -64,7 +68,7 @@ const About = () => {
 
             <div className="mt-20 flex flex-wrap gap-10 flex-row justify-evenly">
                 {services.map((service, index) => (
-                    <ServiceCard key={service.title} index={index} {...service} />
+                     <ServiceCard key={service.title} index={index} {...service} />
                 ))}
             </div>
         </>
