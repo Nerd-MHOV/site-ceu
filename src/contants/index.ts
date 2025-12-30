@@ -105,7 +105,7 @@ const structure = [
   {
     id: 6,
     name: "Observatório",
-    description: `Cúpula de observação equipada com um dos mais modernos telescópios eletrônicos disponíveis ao público no Brasil. Neste telescópio é possivel a observação de planetas, estrelas, agromerados, nebulosas e galáxias.`,
+    description: `Cúpula de observação equipada com um dos mais modernos telescópios eletrônicos disponíveis ao público no Brasil. Neste telescópio é possivel a observação de planetas, estrelas, aglomerados, nebulosas e galáxias.`,
     staticImage: "/images/structure/observatorio.jpg",
     tourId: 8,
   },
@@ -871,7 +871,7 @@ const activitiesList = [
     ],
     topics: [
       "Uso de telescópios",
-      "Observação de astros ( planetas, agromerados, nebulosas, constelações)",
+      "Observação de astros ( planetas, aglomerados, nebulosas, constelações)",
     ],
     tags: [
       { title: "Inglês", color: "text-red-400" },
