@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+.env
 # dependencies
 /node_modules
 /.pnp
@@ -27,6 +27,10 @@ yarn-error.log*
 
 # local env files
 .env*.local
+
+# sympla proxy secrets/cache (never commit the real token)
+server/config.php
+server/.sympla-events-cache.json
 
 # vercel
 .vercel

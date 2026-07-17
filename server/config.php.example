@@ -1,0 +1,4 @@
+<?php
+// Copie este arquivo para config.php (gitignorado) e preencha com o token real.
+// NUNCA commite config.php.
+define('SYMPLA_TOKEN', 'coloque-o-token-da-sympla-aqui');
