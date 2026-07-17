@@ -20,7 +20,10 @@ export interface CalendarEvent {
 // relativo funciona. Em `next dev` não há PHP nenhum servido pelo Next — para
 // testar localmente, suba `php -S localhost:8099 -t server` e defina
 // NEXT_PUBLIC_SYMPLA_PROXY_URL=http://localhost:8099/sympla-events.php em .env.local.
-const SYMPLA_PROXY_URL = process.env.NEXT_PUBLIC_SYMPLA_PROXY_URL || '/sympla-events.php'
+// O guard de NODE_ENV garante que esse override de dev nunca vá parar num build
+// de produção (`npm run build`), mesmo que o .env.local continue no disco.
+const SYMPLA_PROXY_URL = (process.env.NODE_ENV !== 'production' && process.env.NEXT_PUBLIC_SYMPLA_PROXY_URL)
+    || '/sympla-events.php'
 
 async function fetchSymplaEvents(): Promise<SymplaEvent[]> {
     return fetch(SYMPLA_PROXY_URL)
