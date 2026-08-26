@@ -507,7 +507,7 @@ const activitiesList = [
       "/images/Planetarios/Palco Celeste/Palco Celeste Frame 01.jpg",
       "/images/Planetarios/Palco Celeste/Palco Celeste Frame 02.jpg",
     ],
-    description: `Essa sessão aborda a nossa visão do céu noturno, longe da poluição luminosa produzida pelas cidades e mostra o que podemos ver sem o uso de telescópios. É feito o reconhecimento de constelações de verão e inverno para o hemisfério Sul e a seguir viajamos no tempo para diferentes locais da Terra, para que o expectador presencie o acontecimento de eventos astronômicas como auroras, cometas e chuvas de meteoros.`,
+    description: `Essa sessão aborda a nossa visão do céu noturno, longe da poluição luminosa produzida pelas cidades e mostra o que podemos ver sem o uso de telescópios. É feito o reconhecimento de constelações de verão e inverno para o hemisfério Sul e a seguir viajamos no tempo para diferentes locais da Terra, para que o espectador presencie o acontecimento de eventos astronômicas como auroras, cometas e chuvas de meteoros.`,
     subjects: [
       { title: "Astronomia", color: "text-blue-300" },
       { title: "Ciências", color: "text-blue-300" },
@@ -544,7 +544,7 @@ const activitiesList = [
     images: [
       "https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     ],
-    description: `Essa sessão aborda a nossa visão do céu noturno, longe da poluição luminosa produzida pelas cidades e mostra o que podemos ver sem o uso de telescópios. É feito o reconhecimento de constelações de verão e inverno para o hemisfério Sul e a seguir viajamos no tempo para diferentes locais da Terra, para que o expectador presencie o acontecimento de eventos astronômicas como auroras, cometas e chuvas de meteoros.`,
+    description: `Essa sessão aborda o surgimento do Sistema Solar, a formação dos planetas rochosos e gasosos e sua estrutura interior. Presenciamos a evolução do sistema solar até à morte de nossa estrela. A sessão apresenta ainda conceitos de geologia e planetologia.`,
     subjects: [
       { title: "Astronomia", color: "text-blue-300" },
       { title: "Ciências", color: "text-blue-300" },
@@ -629,7 +629,7 @@ const activitiesList = [
     images: [
       "https://images.pexels.com/photos/15326066/pexels-photo-15326066/free-photo-of-show-concerto-apresentacao-sombrio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     ],
-    description: `Com lindas imagens e olhando para as estrelas, os expectadores são convidados a contemplar e refletir filosoficamente sobre a origem do Universo e da vida como a conhecemos.`,
+    description: `Com lindas imagens e olhando para as estrelas, os espectadores são convidados a contemplar e refletir filosoficamente sobre a origem do Universo e da vida como a conhecemos.`,
     subjects: [
       { title: "Biologia", color: "text-green-200" },
       { title: "Ciências", color: "text-blue-300" },

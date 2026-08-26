@@ -174,7 +174,7 @@ function TableActivities() {
           className="flex whitespace-nowrap"
         >
           <a href="/catalogoCEU2025.xlsx">
-            <p className="normal-case">Download XML</p>
+            <p className="normal-case">Download XLSX</p>
           </a>
         </Button>
       </div>
